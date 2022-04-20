@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    float Motherboard, Videocard, CPU, Discount, Cost;
+    float Motherboard, Videocard, CPU, Discount;
     cout << "Motherboard price: ";
     cin >> Motherboard;
     cout << "Videocard price: ";
@@ -13,9 +13,8 @@ int main()
     cin >> CPU;
     cout << "Discount: ";
     cin >> Discount;
-    Cost = Motherboard + Videocard + CPU;
-    Discount = Cost * Discount / 100;
-    Cost -= Discount;
+    Discount = (Motherboard + Videocard + CPU) * Discount / 100;
+    Discount = Motherboard + Videocard + CPU - Discount;
     cout << "Your PC will cost: "
-         << Cost << "$";
+         << Discount << "$";
 }
