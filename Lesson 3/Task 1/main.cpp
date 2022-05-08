@@ -4,10 +4,9 @@ using namespace std;
 
 int main()
 {
-    int a, num;
+    int SIZE, num;
     cout << "Enter size of array: ";
-    cin >> a;
-    const int SIZE = a;
+    cin >> SIZE;
     int arr[SIZE];
     for(int i = 0; i < SIZE; i++){
         cout << "Enter element: ";
