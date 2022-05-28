@@ -16,11 +16,10 @@ int main()
         }
         cout << endl;
     }
-    int i = 0;
-    for(int j = 1; j < hight - i; j++){
+    for(int j = 1; j < hight; j++){
             cout << " ";
         }
-        for(int j = hight - i * 2; j <= hight; j++){
+        for(int j = hight; j <= hight; j++){
             cout << "*";
         }
 }
