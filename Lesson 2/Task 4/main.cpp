@@ -18,8 +18,8 @@ int main()
     }
     for(int j = 1; j < hight; j++){
             cout << " ";
-        }
-        for(int j = hight; j <= hight; j++){
+    }
+    for(int j = hight; j <= hight; j++){
             cout << "*";
-        }
+    }
 }
