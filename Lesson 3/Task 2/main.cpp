@@ -10,15 +10,13 @@ int main()
     cout << "Your first array is: ";
     for(int i = 0; i < 4; i++){
         arr1[i] = rand() % 9;
-        cout << arr1[i];
-        cout << " ";
+        arr2[i] = rand() % 9;
+        cout << arr1[i] << " ";
     }
     cout << endl;
     cout << "Your second array is: ";
     for(int j = 0; j < 4; j++){
-        arr2[j] = rand() % 9;
-        cout << arr2[j];
-        cout << " ";
+        cout << arr2[j] << " ";
     }
     cout << endl;
     for(int i = 0; i < 4; i++){
