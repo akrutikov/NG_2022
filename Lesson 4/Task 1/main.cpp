@@ -1,16 +1,23 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 int main()
 {
-    string first;
-    string second;
-    cout << "Enter your first string: ";
-    getline(cin, first);
-    cout << "Enter your second string: ";
-    getline(cin, second);
+    char str1[100];
+    char str2[100];
+    int first = 0;
+    int second = 0;
+    cout << "Enter your first string: " << endl;
+    cin.getline(str1,100);
+    cout << "Enter your second string: " << endl;
+    cin.getline(str2,100);
+    while(str1[first]){
+        first ++;
+    }
+     while(str2[second]){
+        second ++;
+    }
     if(first > second){
         cout << "First string is bigger!";
     }
@@ -21,3 +28,4 @@ int main()
         cout << "Second string is bigger!";
     }
 }
+
